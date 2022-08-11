@@ -1,8 +1,19 @@
 import React from "react";
+import Weather from "./Weather"
 import './App.css';
 
 export default function App() {
   return (
-    <div className="App">Weather App</div>
+    <div className="App">
+      <div className="container">
+      <Weather/>
+      <footer>
+        This project is created by Helene Lipp and is {" "}
+        <a href="https://github.com/HeleneLi" target="_blank" rel="noreferrer" >
+      open-sourced on GitHub
+      </a>
+      </footer>
+      </div>
+    </div>
   );
 }
