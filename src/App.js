@@ -6,10 +6,10 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
-      <Weather/>
+      <Weather defaultCity="London"/>
       <footer>
         This project is created by Helene Lipp and is {" "}
-        <a href="https://github.com/HeleneLi" target="_blank" rel="noreferrer" >
+        <a href="https://github.com/HeleneLi" target="_blank" rel="noreferrer"  >
       open-sourced on GitHub
       </a>
       </footer>
