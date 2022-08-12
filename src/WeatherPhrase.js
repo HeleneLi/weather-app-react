@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function WeatherPhrase() {
+export default function WeatherPhrase(props) {
   const phraseMapping = {
     "01d": "You can leave your umbrella at home 🌂",
     "01n": "You can leave your umbrella at home 🌂",
@@ -22,5 +22,5 @@ export default function WeatherPhrase() {
     "50n": "You won't see clearer with an umbrella ☂️",
   };
 
-  return WeatherPhrase({phraseMapping});
+  return phraseMapping[props.code];
 }
