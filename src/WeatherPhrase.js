@@ -22,7 +22,5 @@ export default function WeatherPhrase() {
     "50n": "You won't see clearer with an umbrella ☂️",
   };
 
-  return (
-    {phraseMapping}
-  );
+  return WeatherPhrase({phraseMapping});
 }
