@@ -1,4 +1,5 @@
 import React from "react";
+import ReactAnimatedWeather from "react-animated-weather";
 
 export default function WeatherPhrase(props) {
   const phraseMapping = {
@@ -21,5 +22,6 @@ export default function WeatherPhrase(props) {
     "50d": "You won't see clearer with an umbrella ☂️",
     "50n": "You won't see clearer with an umbrella ☂️",
   };
-  return phraseMapping[props.code];
-};
+
+  return <p>{phraseMapping[props.code]}</p>;
+}
