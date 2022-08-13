@@ -4,6 +4,7 @@ import WeatherEmoji from "./WeatherEmojis";
 import WeatherIcon from "./WeatherIcon";
 import WeatherPhrase from "./WeatherPhrase";
 import WeatherTemperature from "./WeatherTemperature";
+import "./Weather.css";
 
 export default function WeatherInfo(props) {
   return (
@@ -19,7 +20,6 @@ export default function WeatherInfo(props) {
           <div className="col-6">
             <WeatherIcon code={props.data.icon} size={52}/>
             <WeatherTemperature celsius={props.data.temperature}/>
-            <WeatherPhrase code={props.data.icon} />
           </div>
           <div className="col-6">
             <ul>
@@ -30,6 +30,9 @@ export default function WeatherInfo(props) {
                 💨 Wind: {props.data.wind}
               </li>
             </ul>
+          <div className="row mt-3">
+          <WeatherPhrase code={props.data.icon} />
+          </div>
           </div>
         </div>
     </div>

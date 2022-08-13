@@ -1,26 +1,26 @@
 import React from "react";
-import ReactAnimatedWeather from "react-animated-weather";
+import ReactAnimatedWeather from 'react-animated-weather';
 
 export default function WeatherPhrase(props) {
   const phraseMapping = {
-    "01d": "You can leave your umbrella at home 🌂",
-    "01n": "You can leave your umbrella at home 🌂",
-    "02d": "You can leave your umbrella at home 🌂",
-    "02n": "You can leave your umbrella at home 🌂",
-    "03d": "You can leave your umbrella at home 🌂",
-    "03n": "You can leave your umbrella at home 🌂",
-    "04d": "You may better think to take an umbrella 🌂",
-    "04n": "You may better think to take an umbrella 🌂",
-    "09d": "Umbrella time ☔️",
-    "09n": "Umbrella time ☔️",
-    "10d": "Umbrella time ☔️",
-    "10n": "Umbrella time ☔️",
-    "11d": "Umbrella time ☔️",
-    "11n": "Umbrella time ☔️",
-    "13d": "Umbrella time ☔️",
-    "13n": "Umbrella time ☔️",
-    "50d": "You won't see clearer with an umbrella ☂️",
-    "50n": "You won't see clearer with an umbrella ☂️",
+    "01d": "Leave your umbrella at home 🌂",
+    "01n": "Leave your umbrella at home 🌂",
+    "02d": "Leave your umbrella at home 🌂",
+    "02n": "Leave your umbrella at home 🌂",
+    "03d": "Leave your umbrella at home 🌂",
+    "03n": "Leave your umbrella at home 🌂",
+    "04d": "Better take an umbrella 🌂",
+    "04n": "Better take an umbrella 🌂",
+    "09d": "Umbrella 🌂 & Raincoat 🧥 o'clock",
+    "10d": "Umbrella 🌂 & Raincoat 🧥 o'clock",
+    "10n": "Umbrella 🌂 & Raincoat 🧥 o'clock",
+    "11d": "Umbrella 🌂 & Raincoat 🧥 o'clock",
+    "11n": "Umbrella 🌂 & Raincoat 🧥 o'clock",
+    "13n": "Umbrella 🌂 & Raincoat 🧥 o'clock",
+    "13d": "Umbrella 🌂 & Raincoat 🧥 o'clock",
+    "09n": "Umbrella 🌂 & Raincoat 🧥 o'clock",
+    "50d": "Don't bump into someone 😶‍🌫️",
+    "50n": "Don't bump into someone 😶‍🌫️",
   };
 
   return <p>{phraseMapping[props.code]}</p>;

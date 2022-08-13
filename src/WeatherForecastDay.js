@@ -1,5 +1,5 @@
 import React from "react";
-import WeatherIcon from "./WeatherIcon";
+import WeatherEmoji from "./WeatherEmojis";
 //Render Forecast Day
 
 export default function WeatherForecastDay(props) {
@@ -23,9 +23,22 @@ export default function WeatherForecastDay(props) {
   return (
     <div>
     <div className="week-day">{day()}</div>
-    <WeatherIcon code={props.data.weather[0].icon} size={24} /><div className="forecast-temp">
+    <div className="row">
+    <div className="col-sm">
+    <div className="card">
+    <div className="card-body">
+    <h5 className="card-title">
+    <WeatherEmoji code={props.data.weather[0].icon} size={24} />
+    </h5>
+    <div class="card-text">
+      <div className="forecast-temp">
       <span className="forecast-temp-max">{maxTemp()}° | </span>
       <span className="forecast-temp-min">{minTemp()}°</span>
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
     </div>
     </div>
   );

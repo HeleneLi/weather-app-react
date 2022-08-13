@@ -1,8 +1,9 @@
 .WeatherForecast {
   text-align: center;
+  padding-top: 30px;
 }
 
 .forecast-temp-min {
-  opacity: 0.6;
   margin-left: 5px;
+  color: #73DAE7;
 }
