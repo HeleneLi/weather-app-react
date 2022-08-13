@@ -1,5 +1,6 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
+import SunriseSet from "./SunriseSet";
 import WeatherEmoji from "./WeatherEmojis";
 import WeatherIcon from "./WeatherIcon";
 import WeatherPhrase from "./WeatherPhrase";
@@ -30,10 +31,10 @@ export default function WeatherInfo(props) {
                 💨 Wind: {props.data.wind}
               </li>
             <li>
-              🏙 Sunrise: X
+              🏙 Sunrise: <SunriseSet date={props.data.sunrise} />
             </li>
             <li>
-              🌃 Sunset: X
+              🌃 Sunset: <SunriseSet date={props.data.sunset} />
             </li>
             </ul>
           <div className="row mt-3">
