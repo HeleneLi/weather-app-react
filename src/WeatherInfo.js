@@ -29,6 +29,12 @@ export default function WeatherInfo(props) {
               <li>
                 💨 Wind: {props.data.wind}
               </li>
+            <li>
+              🏙 Sunrise: X
+            </li>
+            <li>
+              🌃 Sunset: X
+            </li>
             </ul>
           <div className="row mt-3">
           <WeatherPhrase code={props.data.icon} />
