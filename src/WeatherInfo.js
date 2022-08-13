@@ -30,12 +30,13 @@ export default function WeatherInfo(props) {
               <li>
                 💨 Wind: {props.data.wind}
               </li>
-            <li>
-              🏙 Sunrise: <SunriseSet date={props.data.sunrise} />
-            </li>
-            <li>
-              🌃 Sunset: <SunriseSet date={props.data.sunset} />
-            </li>
+              <br></br>
+              <li>
+                🏙 Sunrise: <SunriseSet date={props.data.sunrise} />
+              </li>
+              <li>
+                🌃 Sunset: <SunriseSet date={props.data.sunset} />
+              </li>
             </ul>
           <div className="row mt-3">
           <WeatherPhrase code={props.data.icon} />
