@@ -30,7 +30,7 @@ export default function WeatherForecastDay(props) {
     <h5 className="card-title">
     <WeatherEmoji code={props.data.weather[0].icon} size={24} />
     </h5>
-    <div class="card-text">
+    <div className="card-text">
       <div className="forecast-temp">
       <span className="forecast-temp-max">{maxTemp()}°</span>
       <span className="forecast-temp-min">{minTemp()}°</span>
