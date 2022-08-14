@@ -32,7 +32,7 @@ export default function WeatherForecastDay(props) {
     </h5>
     <div class="card-text">
       <div className="forecast-temp">
-      <span className="forecast-temp-max">{maxTemp()}° | </span>
+      <span className="forecast-temp-max">{maxTemp()}°</span>
       <span className="forecast-temp-min">{minTemp()}°</span>
       </div>
     </div>
