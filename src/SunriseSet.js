@@ -11,8 +11,8 @@ export default function SunriseSet(props) {
     minutes = `0${minutes}`;
   }
   return (
-    <div>
+    <span>
       {hours}:{minutes}
-    </div>
+    </span>
   );
 }

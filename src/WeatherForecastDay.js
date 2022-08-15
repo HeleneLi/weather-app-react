@@ -25,8 +25,8 @@ export default function WeatherForecastDay(props) {
     <div className="week-day">{day()}</div>
     <div className="row">
     <div className="col-sm">
-    <div className="card">
-    <div className="card-body">
+    <div className="card mb-2">
+    <div className="card-body mb-3">
     <h5 className="card-title">
     <WeatherEmoji code={props.data.weather[0].icon} size={24} />
     </h5>
