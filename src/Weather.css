@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 
 .Weather {
-  border: 4px dotted #C29137;
-  font-family: arial, sans-serif;
+  border: 4px dotted rgb(206, 140, 0);
+  font-family: tahoma, sans-serif;
   padding: 30px;
   border-radius: 6px;
   background-color: rgb(251, 251, 242, 0.8);
@@ -11,9 +11,9 @@
 .Weather h1 {
   color: #4B9BBE;
   font-family: 'Lobster', cursive;
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 100;
-  margin: 20px 0px 20px 0px ;
+  margin: 30px 0px 20px 0px ;
   line-height: 45px;
 }
 .Weather ul {
@@ -24,13 +24,13 @@
 .Weather li {
   font-size: 18px;
   font-weight: 100;
-  line-height: 19px;
+  line-height: 23px;
   list-style: none;
 }
 
 .Weather canvas {
-  height: 70px;
-  width: 70px;
+  height: 85px;
+  width: 85px;
   margin-right: 15px;
   margin-top: 10px;
   margin-bottom: 15px;
@@ -39,7 +39,7 @@
 
 .Weather .temperature {
   font-weight: bold;
-  color:#3c919c;
+  color:#4B9BBE;
   font-size: 72px;
   line-height: 72px;
   font-weight: 500;
@@ -55,18 +55,27 @@
 }
 
 .btn-primary {
-  background-color: #3c919c;;
-  border: #73DAE7;
+  background-color: #3c919c;
+  border: #4B9BBE;
+}
+
+.btn-primary:focus {
+  background-color: rgb(206, 140, 0);
 }
 
 .row .mt-3 {
   color:#4B9BBE;
+  text-shadow: 0px -1px rgb(206, 140, 0);;
   font-family: 'Lobster', cursive;
-  padding: 20px;
-  margin: -35px;
-  font-size: 20px;
+  padding-top: 20px;
+  margin: -30px;
+  font-size: 24px;
 }
 
-[role=img] {
-  background: rgba(48, 96, 144, 0.2);
+.hum {
+  border: 4px double #3c919c;
+  padding: 10px;
+  margin-left: -20px;
+  margin-right: 20px;
+  background: rgb(255, 248, 233);
 }

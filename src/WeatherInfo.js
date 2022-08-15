@@ -10,6 +10,7 @@ import "./Weather.css";
 export default function WeatherInfo(props) {
   return (
   <div className="WeatherInfo">
+
       <h1>{props.data.city}{" "}<WeatherEmoji code={props.data.icon} /></h1>
         <ul>
           <li>
@@ -23,6 +24,7 @@ export default function WeatherInfo(props) {
             <WeatherTemperature celsius={props.data.temperature}/>
           </div>
           <div className="col-6">
+            <div className="hum">
             <ul>
               <li>
                 💧 Humidity: {props.data.humidity}
@@ -32,12 +34,13 @@ export default function WeatherInfo(props) {
               </li>
               <br></br>
               <li>
-                🏙 Sunrise: <SunriseSet date={props.data.sunrise} />
+                <b>🏙 Sunrise:</b> <SunriseSet date={props.data.sunrise} />
               </li>
               <li>
                 🌃 Sunset: <SunriseSet date={props.data.sunset} />
               </li>
             </ul>
+          </div>
           <div className="row mt-3">
           <WeatherPhrase code={props.data.icon} />
           </div>
